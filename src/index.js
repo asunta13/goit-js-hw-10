@@ -26,11 +26,6 @@ function onFormInput(event) {
         const markupList = data.map(createMarkupList).join('');
         refs.countryList.innerHTML = markupList;
         refs.countryWrapper.innerHTML = '';
-      } else if (name === '') {
-        return (
-          (refs.countryList.innerHTML = ''),
-          (refs.countryWrapper.innerHTML = '')
-        );
       } else {
         Notify.info(
           'Too many matches found. Please enter a more specific name.'

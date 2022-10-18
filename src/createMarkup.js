@@ -1,7 +1,7 @@
 export function createMarkupOne([
   { name, capital, population, flags, languages },
 ]) {
-  const langValue = languages.values[2].join(', ');
+  const langValue = Object.values(languages).join(', ');
   return `
   <div class="country-wrap">
     <img class="flag" src="${flags.svg}" alt="flag" width="60" height="40"/>
